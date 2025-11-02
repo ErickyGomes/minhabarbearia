@@ -1,11 +1,8 @@
 import nx from '@nx/eslint-plugin';
-import eslintPluginPrettier from 'eslint-plugin-prettier';
-
 export default [
   ...nx.configs['flat/base'],
   ...nx.configs['flat/typescript'],
   ...nx.configs['flat/javascript'],
-  eslintPluginPrettier.configs['recommended'],
   {
     ignores: ['**/dist'],
   },

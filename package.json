@@ -5,6 +5,11 @@
   "scripts": {
     "prepare": "husky"
   },
+  "lint-staged": {
+    "*.{ts,js,html,css,scss,json,md}": [
+      "prettier --write"
+    ]
+  },
   "private": true,
   "devDependencies": {
     "@angular-devkit/core": "~20.3.0",
